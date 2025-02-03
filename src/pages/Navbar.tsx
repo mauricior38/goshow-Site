@@ -3,6 +3,8 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuGroup,
+  DropdownMenuSeparator,
 } from "../components/ui/dropdown-menu";
 
 import goShowLogo from "../assets/logoGoshow.webp";
@@ -13,17 +15,42 @@ import {
   Cog,
   Handshake,
   Phone,
+  Instagram,
+  Facebook,
 } from "lucide-react";
-
 
 export default function Navbar() {
   return (
     <nav className="bg-white border-gray-200 sticky top-0 z-[1000] bg-opacity-80 ">
+      <div className="bg-zinc-900 hidden sm:block">
+        <div className="p-1 px-20 mx-auto max-w-screen-xl flex justify-between">
+          <span className="py-1 px-10 block text-md text-center text-zinc-200">
+            <a href="tel:+5511995178338" className="flex gap-2 items-center">
+              <Phone size={18} className="" />
+              <p>( 11 ) 99517 - 8338</p>
+            </a>
+          </span>
+
+          <div className="py-1 px-10 block text-md text-center text-zinc-200 flex gap-2">
+            <a
+              href="https://www.instagram.com/goshow_transmissao/"
+              target="_blank"
+            >
+              <Instagram size={25} className="hover:text-[#E1306C]" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/goshow_transmissao/"
+              target="_blank"
+            >
+              <Facebook size={25} className="hover:text-[#405DE6]" />
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-4 p-3">
-        <a
-          href="#"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
+        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={goShowLogo} className="h-6 sm:h-8" alt="Goshow logo" />
         </a>
 
@@ -55,6 +82,7 @@ export default function Navbar() {
               </svg>
             </button>
           </DropdownMenuTrigger>
+
           <DropdownMenuContent className="bg-white mr-6 ">
             <DropdownMenuItem className="flex items-center w-[200px]">
               <a
@@ -110,6 +138,26 @@ export default function Navbar() {
                 Contato
               </a>
             </DropdownMenuItem>
+            <DropdownMenuSeparator />
+
+            <DropdownMenuGroup className="flex justify-center">
+              <DropdownMenuItem>
+                <a
+                  href="https://www.instagram.com/goshow_transmissao/"
+                  target="_blank"
+                >
+                  <Instagram size={25} className="hover:text-[#E1306C]" />
+                </a>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <a
+                  href="https://www.instagram.com/goshow_transmissao/"
+                  target="_blank"
+                >
+                  <Facebook size={25} className="hover:text-[#405DE6]" />
+                </a>
+              </DropdownMenuItem>
+            </DropdownMenuGroup>
           </DropdownMenuContent>
         </DropdownMenu>
 
@@ -125,7 +173,7 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-            <a
+              <a
                 href="#company"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
