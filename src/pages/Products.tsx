@@ -1,7 +1,7 @@
 export default function Features() {
 
   return (
-    <section className="bg-zinc-900 bg-gradient-to-tl from-gray-200 via-gray-100 to-gray-200">
+    <section className="bg-zinc-900 bg-gradient-to-tl from-zinc-900 via-zinc-800 to-zinc-900">
       <div
         className="px-4 py-20 mx-auto max-w-screen-xl lg:py-20 lg:px-6"
         id="servicos"
