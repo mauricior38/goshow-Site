@@ -17,7 +17,7 @@ function App() {
     <>
 
       <Helmet>
-        <title>Goshow - tecnologia em transmissões</title>
+
         <meta
           name="description"
           content="Empresa especializada em transmissões, desenvolvimento e tudo que envolve o mundo do ao vivo."
