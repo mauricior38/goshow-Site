@@ -10,7 +10,8 @@ import Company from "./pages/Company";
 import { WhatsappButton } from "./components/whatsApp";
 
 import { Helmet } from "react-helmet";
-import img_url from './assets/capaSEO.webp'
+// import imgUrl from "./assets/capaSEO.webp"
+
 
 function App() {
   return (
@@ -26,15 +27,14 @@ function App() {
           name="keywords"
           content="livestream, stream, broadcast, transmissão, ao vivo, filmagem, gravação, podcast, videocast, app, site, website"
         />
-        <meta name="" />
         <meta property="og:description" content={'Empresa especializada em transmissões, desenvolvimento e tudo que envolve o mundo do ao vivo'} />
         <meta
           property="og:image"
           itemProp="image"
-          content={img_url}
+          content={"./assets/capaSEO.webp"}
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={location.href} />
+        <meta property="og:url" content={"https://www.goshow.com.br/"} />
         <meta
           property="twitter:title"
           content={"Goshow - tecnologia em transmissões"}
@@ -42,7 +42,7 @@ function App() {
         <meta property="twitter:description" content={"Empresa especializada em transmissões, desenvolvimento e tudo que envolve o mundo do ao vivo."} />
         <meta
           property="twitter:image"
-          itemProp={img_url}
+          itemProp={"./assets/capaSEO.webp"}
         />
         <meta property="twitter:card" content="summary_large_image" />
       </Helmet>
