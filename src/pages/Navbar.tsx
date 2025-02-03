@@ -22,32 +22,6 @@ import {
 export default function Navbar() {
   return (
     <nav className="bg-white border-gray-200 sticky top-0 z-[1000] bg-opacity-80 ">
-      <div className="bg-zinc-900 hidden sm:block">
-        <div className="p-1 px-20 mx-auto max-w-screen-xl flex justify-between">
-          <span className="py-1 px-10 block text-md text-center text-zinc-200">
-            <a href="tel:+5511995178338" className="flex gap-2 items-center">
-              <Phone size={18} className="" />
-              <p>( 11 ) 99517 - 8338</p>
-            </a>
-          </span>
-
-          <div className="py-1 px-10 block text-md text-center text-zinc-200 flex gap-2">
-            <a
-              href="https://www.instagram.com/goshow_transmissao/"
-              target="_blank"
-            >
-              <Instagram size={25} className="hover:text-[#E1306C]" />
-            </a>
-
-            <a
-              href="https://www.instagram.com/goshow_transmissao/"
-              target="_blank"
-            >
-              <Facebook size={25} className="hover:text-[#405DE6]" />
-            </a>
-          </div>
-        </div>
-      </div>
 
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-4 p-3">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
