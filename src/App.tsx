@@ -10,7 +10,6 @@ import Company from "./pages/Company";
 import { WhatsappButton } from "./components/whatsApp";
 
 import { Helmet } from "react-helmet";
-// import imgUrl from "./assets/capaSEO.webp"
 
 
 function App() {
