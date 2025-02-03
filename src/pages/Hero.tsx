@@ -19,16 +19,15 @@ export default function Hero() {
         <div className="flex flex-col gap-8 lg:items-center lg:gap-16 lg:flex-row">
           <div className="lg:max-w-xl xl:shrink-0">
             <div>
-              <h2 className="text-3xl font-extrabold leading-none tracking-tight text-zinc-200 sm:text-5xl">
-                <span className="sm:text-6xl text-red-600"> Referência </span> no
-                mercado broadcast
-              </h2>
-              <p className="mt-5 text-base font-normal text-zinc-400 md:max-w-3xl sm:text-md">
+              <h1 className="text-3xl font-extrabold leading-none tracking-tight text-zinc-200 sm:text-5xl">
+                <span className="sm:text-6xl text-red-600"> Referência </span> no mercado de transmissões
+              </h1>
+              <h2 className="mt-5 text-base font-normal text-zinc-400 md:max-w-3xl sm:text-md">
                 Com 15 anos de experiência, a nossa especializada em
                 transmissões ao vivo e desenvolvimento de soluções digitais,
-                oferecendo inovação e qualidade em cada projeto. Reconhecida por
+                oferecemos inovação e qualidade em cada projeto. Reconhecida por
                 sua expertise, atende grandes eventos e empresas com excelência.
-              </p>
+              </h2>
             </div>
 
             <div className="mt-4 sm:border-t sm:border-zinc-400 sm:mt-6 sm:pt-6">
