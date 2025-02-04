@@ -15,7 +15,7 @@ import cavaloCrioulo from "../assets/portifolio/cavaloCrioulo.webp";
 import cavaloCriouloPlaca from "../assets/portifolio/cavaloCriouloPlaca.webp";
 import mangalargaMarchador from "../assets/portifolio/mangalargaMarchador.webp";
 import girolando from "../assets/portifolio/girolando.webp";
-import radioSul from "../assets/portifolio/radiosul.webp";
+import radioSul from "../assets/portifolio/radioSUl.webp";
 
 export default function Portifolio() {
   return (
