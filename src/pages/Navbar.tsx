@@ -61,7 +61,7 @@ export default function Navbar() {
             <DropdownMenuItem className="flex items-center w-[200px]">
               <a
                 href="#"
-                className=" flex gap-2 py-2 text-gray-900 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className=" flex gap-2 w-full py-2 text-gray-900 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 aria-current="page"
               >
                 <Home className="h-5" />
@@ -71,19 +71,8 @@ export default function Navbar() {
 
             <DropdownMenuItem className="flex items-center w-[200px]">
               <a
-                href="#company"
-                className=" flex gap-2 py-2 text-gray-900 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                aria-current="page"
-              >
-                <Building className="h-5" />
-                Empresa
-              </a>
-            </DropdownMenuItem>
-
-            <DropdownMenuItem className="flex items-center w-[200px]">
-              <a
                 href="#servicos"
-                className=" flex gap-2 py-2 text-gray-900 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className=" w-full flex gap-2 py-2 text-gray-900 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 aria-current="page"
               >
                 <Cog className="h-5" />
@@ -94,7 +83,7 @@ export default function Navbar() {
             <DropdownMenuItem className="flex items-center w-[200px]">
               <a
                 href="#clientes"
-                className=" flex gap-2 py-2 text-gray-900 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className=" w-full flex gap-2 py-2 text-gray-900 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 aria-current="page"
               >
                 <Handshake className="h-5" />
@@ -104,8 +93,19 @@ export default function Navbar() {
 
             <DropdownMenuItem className="flex items-center w-[200px]">
               <a
+                href="#company"
+                className=" w-full flex gap-2 py-2 text-gray-900 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                aria-current="page"
+              >
+                <Building className="h-5" />
+                Empresa
+              </a>
+            </DropdownMenuItem>
+
+            <DropdownMenuItem className="flex items-center w-[200px]">
+              <a
                 href="#contato"
-                className=" flex gap-2 py-2 text-gray-900 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="w-full flex gap-2 py-2 text-gray-900 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 aria-current="page"
               >
                 <Phone className="h-5" />
@@ -146,14 +146,7 @@ export default function Navbar() {
                 Inicio
               </a>
             </li>
-            <li>
-              <a
-                href="#company"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Empresa
-              </a>
-            </li>
+            
             <li>
               <a
                 href="#servicos"
@@ -170,6 +163,18 @@ export default function Navbar() {
                 Clientes
               </a>
             </li>
+
+
+            <li>
+              <a
+                href="#company"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Empresa
+              </a>
+            </li>
+
+
             <li>
               <a
                 href="#contato"

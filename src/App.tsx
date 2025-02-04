@@ -1,16 +1,13 @@
 import Contact from "./pages/Contact";
-import Features from "./pages/Products";
+import Products from "./pages/Products";
 import Footer from "./pages/Footer";
 import Hero from "./pages/Hero";
 import Navbar from "./pages/Navbar";
-import Partners from "./pages/Partners";
 
 import ScrollProgress from "./components/ui/scroll-progress";
 import Company from "./pages/Company";
 import { WhatsappButton } from "./components/whatsApp";
-
-import { Helmet } from "react-helmet";
-
+import Portifolio from "./pages/Portifolio";
 
 function App() {
   return (
@@ -19,9 +16,9 @@ function App() {
       <WhatsappButton />
       <Navbar />
       <Hero />
+      <Products />
+      <Portifolio />
       <Company />
-      <Features />
-      <Partners />
       <Contact />
       <Footer />
     </>

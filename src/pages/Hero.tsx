@@ -35,7 +35,7 @@ export default function Hero() {
                 Marcas que utilizamos:
               </p>
 
-              <div className="flex items-center mt-3 w-full bg-white rounded-lg">
+              <div className="flex items-center mt-3 w-full bg-white rounded-lg hidden sm:block">
                 <Marquee reverse pauseOnHover className="[--duration:40s]">
                   <img
                     className="w-auto h-8 md:h-12 mr-4"
