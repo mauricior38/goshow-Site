@@ -1,22 +1,33 @@
 import { Facebook, Instagram, Linkedin, Phone } from "lucide-react";
 
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
+import ReactDOM from "react-dom/client";
+
 import emailjs from "@emailjs/browser";
 
 import img from "../assets/logoGoshow.webp";
 
 export default function Contact() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>();
+
   const [disableBtnEnviar, setDisableBtnEnviar] = useState(false);
 
   async function SendEmail(e: any) {
     e.preventDefault();
 
+    const currentForm = form.current;
+    // this prevents sending emails if there is no form.
+    // in case currentForm cannot possibly ever be null,
+    // you could alert the user or throw an Error, here
+    if (currentForm == null) return;
+
+    console.log(currentForm);
+
     await emailjs
       .sendForm(
         "service_2i7z4ze",
         "template_jwxodpk",
-        form.current,
+        currentForm,
         "Z0BOGblabxyKQI71d"
       )
       .then(
@@ -57,14 +68,15 @@ export default function Contact() {
         >
           <div className="col-span-2">
             <label
-              htmlFor="name"
+              htmlFor="user_name"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
               Nome completo
             </label>
             <input
               type="text"
-              id="name"
+              name="user_name"
+              id="username"
               className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-zinc-500 focus:border-zinc-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-zinc-500 dark:focus:border-zinc-500 dark:shadow-sm-light"
               placeholder="Digite seu nome e sobrenome"
               required
@@ -80,6 +92,7 @@ export default function Contact() {
             </label>
             <input
               type="email"
+              name="user_email"
               id="email"
               className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-zinc-500 focus:border-zinc-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-zinc-500 dark:focus:border-zinc-500 dark:shadow-sm-light"
               placeholder="nome@goshow.com"
@@ -94,8 +107,9 @@ export default function Contact() {
               Telefone de contato
             </label>
             <input
-              type="number"
+              type="text"
               id="phone-number"
+              name="user_telefone"
               className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-zinc-500 focus:border-zinc-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-zinc-500 dark:focus:border-zinc-500 dark:shadow-sm-light"
               placeholder="Digite seu telefone com DDD"
               required
@@ -111,9 +125,11 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
+              name="message"
               rows={6}
               className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-zinc-500 focus:border-zinc-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-zinc-500 dark:focus:border-zinc-500"
               placeholder="Escreva sua mensagem"
+              required
             ></textarea>
           </div>
           {disableBtnEnviar ? (
