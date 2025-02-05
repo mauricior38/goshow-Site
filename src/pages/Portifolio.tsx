@@ -23,7 +23,7 @@ export default function Portifolio() {
       <div className="max-w-screen-xl px-4 py-20 sm:p-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
         <div className="max-w-2xl mx-auto sm:mx-0 text-left border-l-8 border-red-400 px-10">
           <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-zinc-200 sm:text-4xl">
-            Confira nossos últimos projetos
+            Confira nossos principais projetos
           </h1>
           <h2 className="mt-4 text-base font-normal text-zinc-400 sm:text-md hidden sm:contents">
             Através de nossos parceiros, planejamos e atingimos objetivos,
@@ -94,10 +94,11 @@ export default function Portifolio() {
                 </a>
                 <p className="text-base font-normal text-zinc-300 sm:text-lg dark:text-gray-400">
                   Com uma parceria de de 15 anos e mais de 600 transmissões
-                  realizados juntos, o Canal Rural sendo detendora também de
-                  Canal do Criador e Lance Rural, mantem uma parceria longa e
-                  duradoura.
+                  realizados juntos, o Canal Rural sendo detendora também do
+                  Canal do Criador e aplicativo Lance Rural, mantem uma parceria
+                  longa e duradoura.
                 </p>
+
                 <div className="flex gap-2">
                   <Badge className="text-sm" variant={"live"}>
                     Transmissão ao vivo
@@ -112,7 +113,7 @@ export default function Portifolio() {
                   </Badge>
 
                   <Badge className="text-sm" variant={"dev"}>
-                    Desenvolvimento sistemas
+                    Web/App develop
                   </Badge>
                 </div>
               </div>
@@ -174,12 +175,13 @@ export default function Portifolio() {
                 <p className="text-base font-normal text-zinc-300 sm:text-md">
                   Cavalo Crioulo conta com uma parceria de mais de 10 anos,
                   somos responsáveis pelas transmissões das principais provas
-                  equester da raça além de todos os demais eventos que somam-se
-                  em média 70 por ano. Além de serviços de transmissão, contam
-                  também com nossas soluções de cloud, edição em realtime e
-                  outras ferramentas que possuímos. Com essa parceria de longa
-                  data, o seu canal no youtube atingiu a marca de mais 100 mil
-                  inscritos.
+                  equestres da raça além de todos os demais eventos que somam-se
+                  em média 50 por ano. Além de serviços de transmissão, contam
+                  também com nossas soluções de produções em núvem e demais
+                  ferramentas que possuímos. Com essa parceria de longa data, o
+                  seu canal no youtube atingiu a marca de mais 100 mil
+                  inscritos, o qual somos muitos honrados em fazer parte desta
+                  história.
                 </p>
               </div>
 
@@ -197,7 +199,7 @@ export default function Portifolio() {
                 </Badge>
 
                 <Badge className="text-sm" variant={"dev"}>
-                  Desenvolvimento sistemas
+                  Web/App develop
                 </Badge>
               </div>
             </article>
@@ -224,7 +226,7 @@ export default function Portifolio() {
                   Por mais de 10 anos, somos os responsáveis pelas transmissões
                   das provas Nacionais do Mangalarga Marchador. As transmissões
                   contam com uma audiência de mais de 1 milhão de visualizações
-                  ao longo da exposição.
+                  ao longo do evento que duram mais de 15hrs por dia.
                 </p>
               </div>
             </article>

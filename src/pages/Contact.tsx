@@ -3,6 +3,8 @@ import { Facebook, Instagram, Linkedin, Phone } from "lucide-react";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+import img from "../assets/logoGoshow.webp";
+
 export default function Contact() {
   const form = useRef();
   const [disableBtnEnviar, setDisableBtnEnviar] = useState(false);
@@ -20,11 +22,13 @@ export default function Contact() {
       .then(
         (result) => {
           alert("Sua mensagem foi enviada com sucesso");
-          setDisableBtnEnviar(true)
+          setDisableBtnEnviar(true);
         },
         (error) => {
-          alert("Ocorreu um erro ao enviar a mensagem, tente novamente mais tarde ou chame pelo whatsapp");
-          setDisableBtnEnviar(false)
+          alert(
+            "Ocorreu um erro ao enviar a mensagem, tente novamente mais tarde ou chame pelo whatsapp"
+          );
+          setDisableBtnEnviar(false);
         }
       );
   }
