@@ -20,13 +20,14 @@ export default function Hero() {
           <div className="lg:max-w-xl xl:shrink-0">
             <div>
               <h1 className="text-3xl font-extrabold leading-none tracking-tight text-zinc-200 sm:text-5xl">
-                <span className="sm:text-6xl text-red-600"> Referência </span> no mercado de transmissões
+                <span className="sm:text-6xl text-red-600"> Referência </span>{" "}
+                no mercado de transmissões
               </h1>
               <h2 className="mt-5 text-base font-normal text-zinc-400 md:max-w-3xl sm:text-md">
                 Com 15 anos de experiência, a nossa especializada em
-                transmissões ao vivo e desenvolvimento de soluções digitais,
-                oferecemos inovação e qualidade em cada projeto. Reconhecida por
-                sua expertise, atende grandes eventos e empresas com excelência.
+                transmissões ao vivo e desenvolvimento de soluções digitais.
+                Oferecemos inovação e qualidade em cada projeto sendo
+                reconhecida por sua expertise e entregas de alta qualidade.
               </h2>
             </div>
 
