@@ -1,7 +1,7 @@
 import {
   Carousel,
-  CarouselContent,
   CarouselItem,
+  CarouselContent,
 } from "../components/ui/carousel";
 
 import { Marquee } from "../components/ui/marquee";
@@ -24,7 +24,7 @@ export default function Hero() {
                 no mercado de transmissões
               </h1>
               <h2 className="mt-5 text-base font-normal text-zinc-400 md:max-w-3xl sm:text-md">
-                Com 15 anos de experiência, a nossa especializada em
+                Com 15 anos de experiência, somos especializados em
                 transmissões ao vivo e desenvolvimento de soluções digitais.
                 Oferecemos inovação e qualidade em cada projeto sendo
                 reconhecida por sua expertise e entregas de alta qualidade.
