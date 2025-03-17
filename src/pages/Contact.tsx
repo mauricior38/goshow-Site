@@ -161,7 +161,7 @@ export default function Contact() {
 
             <div className="flex sm:flex-col  gap-2 justify-center sm:justify-start">
               <a
-                href="https://www.instagram.com/goshow_transmissoes/"
+                href="https://www.instagram.com/goshowtransmissoes/"
                 target="_blank"
                 className="font-semibold text-zinc-600 hover:underline flex items-center gap-2"
               >
